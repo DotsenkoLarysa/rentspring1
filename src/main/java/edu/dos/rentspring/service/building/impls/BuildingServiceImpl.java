@@ -11,6 +11,7 @@ import java.util.List;
 
 @Service
 public class BuildingServiceImpl implements IBuildingService {
+
     @Autowired
     BuildingDAOFakeImpl buildingDAOFake;
 
@@ -21,7 +22,7 @@ public class BuildingServiceImpl implements IBuildingService {
 
     @Override
     public Building get(String id) {
-        return null;
+        return buildingDAOFake.get(id);
     }
 
     @Override

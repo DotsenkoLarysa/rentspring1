@@ -3,6 +3,7 @@ package edu.dos.rentspring.controller;
 import edu.dos.rentspring.model.Building;
 import edu.dos.rentspring.service.building.impls.BuildingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,13 @@ public class BuildingRestController {
     BuildingServiceImpl buildingService;
 
     @RequestMapping("/list")
-    List<Building> getBuilding(){
+    List<Building> getBuildings(){
         return buildingService.getAll();
     }
+
+    @RequestMapping("/get/{id}")
+    Building getBuilding(@PathVariable (value="id")String id){
+        return buildingService.get(id);
+    }
+
 }

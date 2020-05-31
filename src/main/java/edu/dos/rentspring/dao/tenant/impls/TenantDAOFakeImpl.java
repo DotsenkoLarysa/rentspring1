@@ -20,7 +20,8 @@ public class TenantDAOFakeImpl implements ITenantDAO {
 
     @Override
     public Tenant get(String id) {
-        return null;
+        return this.getAll().stream().filter(el->el.getID()
+                .equals(id)).findFirst().orElse(null);
     }
 
     @Override

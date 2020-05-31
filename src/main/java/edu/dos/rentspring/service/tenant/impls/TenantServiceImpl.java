@@ -21,7 +21,7 @@ public class TenantServiceImpl implements ITenantService {
 
     @Override
     public Tenant get(String id) {
-        return null;
+        return tenantDAOFake.get(id);
     }
 
     @Override

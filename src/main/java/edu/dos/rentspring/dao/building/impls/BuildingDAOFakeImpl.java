@@ -20,7 +20,8 @@ public class BuildingDAOFakeImpl implements IBuildingDAO {
 
     @Override
     public Building get(String id) {
-        return null;
+        return this.getAll().stream().filter(el->el.getID()
+                .equals(id)).findFirst().orElse(null);
     }
 
     @Override
