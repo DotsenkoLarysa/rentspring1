@@ -24,11 +24,11 @@ public class Tenant {
         this.contactPerson = contactPerson;
     }
 
-    public String getID() {
+    public String getId() {
         return id;
     }
 
-    public void setID(String ID) {
+    public void setId(String id) {
         this.id = id;
     }
 

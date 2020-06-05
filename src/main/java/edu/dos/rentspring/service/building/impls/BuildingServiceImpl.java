@@ -17,7 +17,7 @@ public class BuildingServiceImpl implements IBuildingService {
 
     @Override
     public Building create(Building building) {
-        return null;
+        return buildingDAOFake.create(building);
     }
 
     @Override
@@ -27,12 +27,12 @@ public class BuildingServiceImpl implements IBuildingService {
 
     @Override
     public Building update(Building building) {
-        return null;
+        return buildingDAOFake.update(building);
     }
 
     @Override
     public Building delete(String id) {
-        return null;
+        return buildingDAOFake.delete(id);
     }
 
     @Override

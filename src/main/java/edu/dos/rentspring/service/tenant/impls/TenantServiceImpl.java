@@ -16,7 +16,7 @@ public class TenantServiceImpl implements ITenantService {
 
     @Override
     public Tenant create(Tenant tenant) {
-        return null;
+        return tenantDAOFake.create(tenant);
     }
 
     @Override
@@ -26,12 +26,12 @@ public class TenantServiceImpl implements ITenantService {
 
     @Override
     public Tenant update(Tenant tenant) {
-        return null;
+        return tenantDAOFake.update(tenant);
     }
 
     @Override
     public Tenant delete(String id) {
-        return null;
+        return tenantDAOFake.delete(id);
     }
 
     @Override

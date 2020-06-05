@@ -1,4 +1,4 @@
-package edu.dos.rentspring.controller;
+package edu.dos.rentspring.controller.rest;
 
 
 import edu.dos.rentspring.model.Apartment;
